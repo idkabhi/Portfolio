@@ -1,0 +1,86 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+  }
+  
+  .header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .container h5 {
+    font-size: 1.7rem;
+  }
+  
+  .container h1 {
+    font-size: 3rem;
+  }
+  
+  /* ----- CTA ----- */
+  .cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  /* ----- HEADER SOCIALS -----*/
+  .header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 9rem;
+    font-size: 30px;
+  }
+  
+  .header_socials::after {
+    content: "";
+    width: 2px;
+    height: 2rem;
+    background: var(--color-primary);
+  }
+  
+  /* ---- ME ---- */
+  .me {
+    width: 250px;
+    position: absolute;
+    left: calc(50% - 8rem);
+    margin-top: 3.2rem;
+    overflow: hidden;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  
+  /* ---- SCROLL DOWN ---- */
+  .scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 16rem;
+    transform: rotate(90deg);
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  /* ------- Media Queries (Medium Devices) ------- */
+  @media screen and (max-width: 1024px) {
+    header {
+      height: 68vh;
+    }
+  }
+  
+  /* ------- Media Queries (Small Devices) ------- */
+  @media screen and (max-width: 600px) {
+    header {
+      height: 100vh;
+    }
+  
+    .header_socials,
+    .scroll_down {
+      display: none;
+    }
+  }
